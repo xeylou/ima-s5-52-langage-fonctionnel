@@ -1,0 +1,73 @@
+4 octets int
+1 oct char
+float 2 octets
+
+types nom ;
+
+int b ;
+
+// CA MARCHE
+char b = 10;
+
+
+chat a = 'i'; 
+
+table ascii, retire 32 pour avoir sa majuscule
+
+
+int_32
+int_16
+
+sizeof(int)
+
+| entre chaque bit
+& entre chaque bit
+^ déplacer les bits (ici de 2, 5 ^ 30 = 25) multiplie par deux si plus de la moitier du nombre maximal
+
+printf("il fait %f le %d\n", temperature, jour)
+
+%d int
+%f float
+%c char
+0 c'est 48, donc 56 c'est 8
+
+
+scanf(format, $variable)
+scanf("%d", &temperature)
+
+
+if(condition){
+
+}
+
+if(age > 7){
+}
+PEUT IMPORTE CE QUI FAIT 1 AUSSI
+
+bool
+&& pour condition
+|| pour condition
+! not
+
+a = (1>2)+1 FERA 1
+
+1 < a < 2 NON
+fait d'abord 1 < a, qui fera 0
+
+--b <=> b-- mais dans une opération
+
+#include "stdio.h"
+
+main(){
+  code
+}
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello, World! This is a native C program compiled on the command line.\n");
+    return 0;
+}
