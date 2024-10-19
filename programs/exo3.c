@@ -11,7 +11,7 @@ int main() {
     if (input_age >= 5 && input_age <= 19) {
         printf("Le tarif est de 15€.\n");
     }
-    if (input_age >= 20 && input_age < 60) {
+    if (input_age > 19 && input_age < 60) {
         printf("Le tarif est de 50.\n");
     }
     if (input_age > 60) {
