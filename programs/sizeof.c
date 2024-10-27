@@ -3,7 +3,7 @@
 // ld => long int
 
 int main() {
-    printf("%ld octets sont utilisés pour un entier\n", sizeof(int));
-    printf("%ld octets sont utilisés pour un float\n", sizeof(float));
-    printf("%ld octets sont utilisés pour un double\n", sizeof(double));
+    printf("%ld octets sont utilisés pour coder un entier en mémoire\n", sizeof(int));
+    printf("%ld octets sont utilisés pour un coder un float en mémoire\n", sizeof(float));
+    printf("%ld octets sont utilisés pour un coder un double en mémoire\n", sizeof(double));
 }

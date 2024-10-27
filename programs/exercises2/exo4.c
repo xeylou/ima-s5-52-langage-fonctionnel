@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// sort the array
+// int* pour passer un tableau, comme input_array[] (il ne connait pas la taille et fait n'importe quoi sinon)
 int bubble_sort(int* input_array, int input_array_size) {
 
     int i, tmp;
@@ -11,10 +11,13 @@ int bubble_sort(int* input_array, int input_array_size) {
             input_array[i] = input_array[i+1];
             input_array[i+1] = tmp;
         }
-        printf("[DEBUG] OK\n\n");
     }
 
-    
+    // print array's elements
+    printf("Éléments du tableau : \n");
+    for (i = 0; i < input_array_size; i++) {
+         printf("%d\n",input_array[i]);
+    }
 }
 
 int main() {
@@ -46,7 +49,6 @@ int main() {
             printf("Tableau non trié ici\n");
             // break;
         }
-        printf("[DEBUG] OK\n\n");
     }
 
     printf("=====\nBubble sort\n=====\n\n");
