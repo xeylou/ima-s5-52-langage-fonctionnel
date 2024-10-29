@@ -26,25 +26,41 @@ int swap(int* input_a_int, int* input_b_int) {
     int tmp_int = *input_a_int;
     *input_a_int = *input_b_int;
     *input_b_int = tmp_int;
-    printf("\na : %d, b : %d", *input_a_int, *input_b_int);
+    // printf("\na : %d, b : %d", *input_a_int, *input_b_int);
+}
+
+char* concat_2(char* input_chaine_1, char* input_chaine_2) {
+    int longueur_des_deux_chaines = strlen(input_chaine_1) + strlen(input_chaine_2);
+    printf("%d", longueur_des_deux_chaines);
+    // char chaine_finale = *input_chaine_1 + *input_chaine_2;
+    return longueur_des_deux_chaines;
 }
 
 int main() {
 
-    char eg = 'A';
-    lowercase(&eg);  // &eg pointeur vers l'adresse mémoire de eg
-    assert(eg >= 'a' && eg <= 'z');  // vérifie le lowercase
+    // char eg = 'A';
+    // lowercase(&eg);  // &eg pointeur vers l'adresse mémoire de eg
+    // assert(eg >= 'a' && eg <= 'z');  // vérifie le lowercase
 
-    char chaine_de_caracteres[100];
+    // char chaine_de_caracteres[100];
+    // printf("Insérer une chaine de caractère :\n");
+    // // %c char et %s string
+    // scanf("%s", &chaine_de_caracteres);
+    // lowercase_string(&chaine_de_caracteres);
+    // printf("%s", chaine_de_caracteres);
+
+    // int a = 5;
+    // int b = 10;
+    // swap(&a, &b);
+
+    // 3 Concat
+    // création de deux chaines de caractères
+    char chaine_de_caracteres_1[100], chaine_de_caracteres_2[100];
     printf("Insérer une chaine de caractère :\n");
-    // %c char et %s string
-    scanf("%s", &chaine_de_caracteres);
-    lowercase_string(&chaine_de_caracteres);
-    printf("%s", chaine_de_caracteres);
-
-    int a = 5;
-    int b = 10;
-    swap(&a, &b);
+    scanf("%s", chaine_de_caracteres_1);
+    printf("Insérer une deuxième chaine de caractère :\n");
+    scanf("%s", chaine_de_caracteres_2);
+    concat_2(chaine_de_caracteres_1, chaine_de_caracteres_2);
 
     return 0;
 }
